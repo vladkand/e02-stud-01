@@ -9,25 +9,28 @@
 
    <body>
       <!-- ШАПКА САЙТА -->
-      <header class="top">
+      <header class="footer">
          <!-- LOGO-START -->
-         <a href="#" class="logo link">Web<span class="logo-color--top logo-color">Studio</span></a>
+         <a href="#" class="logo header__logo link"
+            >Web<span class="logo__part logo__part--darck">Studio</span></a
+         >
          <!-- LOGO-FIN -->
 
          <!-- NAV-START -->
-         <nav class="nav-top">
-            <ul class="nav-top__list list">
-               <li class="nav-top__item">
-                  <a href="#" class="nav-top__link link-current link">Студія</a>
+         <nav class="footer__nav nav">
+            <ul class="nav__list list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link link-current link">Студія</a>
                </li>
-               <li class="nav-top__item">
-                  <a href="./portfolio.html" class="nav-top__link link">Портфоліо</a>
+               <li class="nav__item">
+                  <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
                </li>
-               <li class="nav-top__item"><a href="#" class="nav-top__link link">Контакти</a></li>
+               <li class="nav__item"><a href="#" class="nav__link link">Контакти</a></li>
             </ul>
          </nav>
          <!-- NAV-FIN -->
 
+         <!-- Контакты -->
          <ul class="contact list">
             <li class="contact-item">
                <a href="mailto:info@devstudio.com" class="contac_mail link">info@devstudio.com</a>
@@ -185,6 +188,23 @@
          </section>
       </main>
       <!-- ПОДВАЛ СТРАНИЦЫ -->
-      <footer></footer>
+
+      <footer class="footer">
+         <a href="#" class="logo footer__logo link"
+            >Web<span class="logo__part logo__part--light">Studio</span>
+         </a>
+
+         <adress class="adress">
+            <p class="adress_text">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="adress-list list">
+               <li class="adress__item">
+                  <a class="adress__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+               </li>
+               <li class="adress__item">
+                  <a class="adress__link" href="tel:+380961111111">+38 096 111 11 11 </a>
+               </li>
+            </ul>
+         </adress>
+      </footer>
    </body>
 </html>
