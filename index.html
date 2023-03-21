@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
 
    <body>
       <!-- ШАПКА САЙТА -->
-      <header class="footer">
+      <header class="main-header">
          <!-- LOGO-START -->
          <a href="#" class="logo header__logo link"
             >Web<span class="logo__part logo__part--darck">Studio</span></a
@@ -17,43 +17,47 @@
          <!-- LOGO-FIN -->
 
          <!-- NAV-START -->
-         <nav class="footer__nav nav">
-            <ul class="nav__list list">
-               <li class="nav__item">
-                  <a href="#" class="nav__link link-current link">Студія</a>
+         <nav class="main-nav">
+            <ul class="main-menu main-nav_list list">
+               <li class="main-menu__item">
+                  <a href="#" class="main-menu__link link-current link">Студія</a>
                </li>
-               <li class="nav__item">
-                  <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+               <li class="main-menu__item">
+                  <a href="./portfolio.html" class="main-nav__link link">Портфоліо</a>
                </li>
-               <li class="nav__item"><a href="#" class="nav__link link">Контакти</a></li>
+               <li class="main-menu__item">
+                  <a href="#" class="main-menu_link link">Контакти</a>
+               </li>
             </ul>
          </nav>
          <!-- NAV-FIN -->
 
          <!-- Контакты -->
-         <ul class="contact list">
-            <li class="contact-item">
-               <a href="mailto:info@devstudio.com" class="contac_mail link">info@devstudio.com</a>
+         <ul class="main-contact list">
+            <li class="main-contact__item">
+               <a href="mailto:info@devstudio.com" class="main-contact__mail link"
+                  >info@devstudio.com</a
+               >
             </li>
-            <li class="contact-item">
-               <a href="tel:++380961111111" class="contact_tel link">+38 096 111 11 11</a>
+            <li class="main-contact__item">
+               <a href="tel:++380961111111" class="main-contact__tel link">+38 096 111 11 11</a>
             </li>
          </ul>
       </header>
       <!-- HEADER-FIN -->
 
-      <main class="">
+      <main class="main-content">
          <!-- ! START HERO -->
          <section class="hero">
             <h1 class="pretitle hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-            <button class="button btn" type="button">Замовити послугу</button>
+            <button class="hero__btn btn" type="button">Замовити послугу</button>
          </section>
 
          <!-- SECTION FEATURES -->
 
          <section class="features">
-            <h2 class="title title--hidden">FEATURES (hidden)</h2>
+            <h2 class="features__title title--hidden title">FEATURES (hidden)</h2>
             <ul class="features__list list">
                <li>
                   <h3 class="features__subtitle subitle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -62,19 +66,19 @@
                   </p>
                </li>
                <li>
-                  <h3 class="pretitle">ПУНКТУАЛЬНІСТЬ</h3>
+                  <h3 class="features__subtitle subitle">ПУНКТУАЛЬНІСТЬ</h3>
                   <p class="features__text text">
                      Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                   </p>
                </li>
                <li>
-                  <h3 class="pretitle">ПЛАНУВАННЯ</h3>
+                  <h3 class="features__subtitle subitle">ПЛАНУВАННЯ</h3>
                   <p class="features__text text">
                      Так само консультація з широким активом значною мірою зумовлює.
                   </p>
                </li>
                <li>
-                  <h3 class="pretitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                  <h3 class="features__subtitle subitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                   <p class="features__text text">
                      Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                   </p>
@@ -85,22 +89,16 @@
          <!-- SECTION-WORKS -->
 
          <section class="works">
-            <h2 class="works_title title">Чим ми займаємося</h2>
+            <h2 class="works__title title">Чим ми займаємося</h2>
             <ul class="works__list list">
                <li class="works__item">
-                  <img
-                     src="./images/work01.jpg"
-                     alt="человек набирает текст на клав"
-                     width="370"
-                     height="294"
-                  />
+                  <img src="./images/work01.jpg" alt="человек набирает текст на клав" width="370" />
                </li>
                <li class="works__item">
                   <img
                      src="./images/work02.jpg"
                      alt="человек с о смартфоном и ноутбуком"
                      width="370"
-                     height="294"
                   />
                </li>
                <li class="works__item">
@@ -108,7 +106,6 @@
                      src="./images/work03.jpg"
                      alt="человек с калибрующим устройством"
                      width="370"
-                     height="294"
                   />
                </li>
             </ul>
@@ -120,14 +117,9 @@
             <h2 class="team__title title">Наша команда</h2>
             <ul class="team__list list">
                <li class="team__item member">
-                  <img
-                     src="./images/member1.jpg"
-                     alt="портрет члена команды"
-                     width="270"
-                     height="260"
-                  />
-                  <h3 class="member__name subtitle">Ігор Дем'яненко</h3>
-                  <p class="member__text">Product Designer</p>
+                  <img src="./images/member1.jpg" alt="портрет члена команды" width="270" />
+                  <h3 class="member____subtitle subtitle">Ігор Дем'яненко</h3>
+                  <p class="member__text text">Product Designer</p>
                   <ul class="social-list list">
                      <li class="social-list__item">
                         <a href="/" class="social-list__link">ins</a>
@@ -144,14 +136,9 @@
                   </ul>
                </li>
                <li class="team__item member">
-                  <img
-                     src="./images/member2.jpg"
-                     alt="портрет члена команды"
-                     width="270"
-                     height="260"
-                  />
-                  <h3 class="member__name subtitle">Ольга Рєпіна</h3>
-                  <p class="member__text">Frontend Developer</p>
+                  <img src="./images/member2.jpg" alt="портрет члена команды" width="270" />
+                  <h3 class="member____subtitle subtitle">Ольга Рєпіна</h3>
+                  <p class="member__text text">Frontend Developer</p>
                   <ul class="social-list list">
                      <li class="social-list__item">
                         <a href="/" class="social-list__link">ins</a>
@@ -168,14 +155,9 @@
                   </ul>
                </li>
                <li class="team__item member">
-                  <img
-                     src="./images/member3.jpg"
-                     alt="портрет члена команды"
-                     width="270"
-                     height="260"
-                  />
-                  <h3 class="member__name subtitle">Микола Тарасов</h3>
-                  <p class="member__text">Marketing</p>
+                  <img src="./images/member3.jpg" alt="портрет члена команды" width="270" />
+                  <h3 class="member____subtitle subtitle">Микола Тарасов</h3>
+                  <p class="member__text text">Marketing</p>
                   <ul class="social-list list">
                      <li class="social-list__item">
                         <a href="/" class="social-list__link">ins</a>
@@ -192,14 +174,9 @@
                   </ul>
                </li>
                <li class="team__item member">
-                  <img
-                     src="./images/member4.jpg"
-                     alt="портрет члена команды"
-                     width="270"
-                     height="260"
-                  />
-                  <h3 class="member__name subtitle">Михайло Єрмаков</h3>
-                  <p class="member__text subtitle">UI Designer</p>
+                  <img src="./images/member4.jpg" alt="портрет члена команды" width="270" />
+                  <h3 class="member____subtitle subtitle">Михайло Єрмаков</h3>
+                  <p class="member__text text">UI Designer</p>
                   <ul class="social-list list">
                      <li class="social-list__item">
                         <a href="/" class="social-list__link">ins</a>
@@ -220,21 +197,18 @@
       </main>
       <!-- ПОДВАЛ СТРАНИЦЫ -->
 
-      <footer class="footer">
-         <a href="#" class="logo footer__logo link"
+      <footer class="main-footer">
+         <a href="#" class="logo main-footer__logo link"
             >Web<span class="logo__part logo__part--light">Studio</span>
          </a>
 
-         <address class="adress">
-            <p class="adress_text">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="adress-list list">
-               <li class="adress__item">
-                  <a class="adress__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
-               </li>
-               <li class="adress__item">
-                  <a class="adress__link" href="tel:+380961111111">+38 096 111 11 11 </a>
-               </li>
-            </ul>
+         <address class="contact-bottom">
+            <p class="contact-bottom__text">м. Київ, пр-т Лесі Українки, 26</p>
+
+            <a class="contact-bottom__link" href="mailto:info@devstudio.com"> info@devstudio.com </a
+            ><br />
+
+            <a class="contact-bottom__link" href="tel:+380961111111">+38 096 111 11 11 </a>
          </address>
       </footer>
    </body>
